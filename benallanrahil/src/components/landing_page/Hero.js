@@ -1,9 +1,14 @@
 import React from "react"
+import "../styles/Hero.scss"
 
 const Hero = () => {
   return (
     <div className="Hero">
-      <img src="../../../public/static/large.png" alt="me" />
+      <div className="bio">
+        <div className="bio-title">
+          <h1>H O W D Y</h1>
+        </div>
+      </div>
     </div>
   )
 }

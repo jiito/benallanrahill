@@ -36,14 +36,14 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
+        {/* <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
           <p>
             This site is in development. Go to:
             <a href="benallanrahill.com"> benallanrahill.com</a>
           </p>
-        </footer>
+        </footer> */}
       </div>
     </>
   )
