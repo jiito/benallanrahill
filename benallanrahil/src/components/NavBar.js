@@ -7,18 +7,14 @@ const NavBar = () => (
       benji
     </Link>
     <ul>
-      <li>
-        <a href="#" className="link1">
-          projects
-        </a>
+      <li className="NavItem">
+        <a href="#">projects</a>
       </li>
-      <li>
+      <li className="NavItem">
         <Link to="/about/">about</Link>
       </li>
-      <li>
-        <a href="#" className="link3">
-          contact
-        </a>
+      <li className="NavItem">
+        <a href="#">contact</a>
       </li>
     </ul>
   </nav>
