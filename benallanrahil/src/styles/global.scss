@@ -33,8 +33,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #99b1bf;
-  border-bottom: 2px solid #99b1bf;
   padding: 20px;
   margin-bottom: 2em;
 
@@ -48,13 +46,13 @@ nav {
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
-    color: #f2f2f2 !important;
+    color: #0f1928 !important;
     font-weight: lighter;
     &:active {
       color: red;
     }
     &:hover {
-      border-bottom: 2px solid #364559;
+      border-bottom: 2px solid #00adb5;
       border-radius: 0.5px;
     }
   }

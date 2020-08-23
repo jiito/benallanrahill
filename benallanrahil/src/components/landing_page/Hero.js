@@ -1,12 +1,26 @@
 import React from "react"
-import "../styles/Hero.scss"
+import styled from "styled-components"
+
+const Title = styled.h1`
+  font-family: sans-serif;
+  font-weight: lighter;
+  color: black;
+`
+
+const Highlight = styled.span`
+  color: #00adb5;
+`
 
 const Hero = () => {
   return (
     <div className="Hero">
       <div className="bio">
         <div className="bio-title">
-          <h1>H O W D Y</h1>
+          <Title>
+            {" "}
+            Howdy! 🤙 It's <Highlight>Benjamin</Highlight> here. Welcome to my
+            site!
+          </Title>
         </div>
       </div>
     </div>
