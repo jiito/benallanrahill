@@ -9,7 +9,7 @@ const NavBar = () => (
     </Link>
     <ul>
       <li className="NavItem">
-        <a href="#">projects</a>
+        <a href="/im-saying">what i'm saying</a>
       </li>
       <li className="NavItem">
         <Link to="/about/">about</Link>
