@@ -19,7 +19,7 @@ const Hero = () => {
           <Title>
             {" "}
             Howdy! 🤙 It's <Highlight>Benjamin</Highlight> here. Welcome to my
-            site!
+            internet island 🌴!
           </Title>
         </div>
       </div>
