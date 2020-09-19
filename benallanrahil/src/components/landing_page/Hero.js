@@ -17,7 +17,6 @@ const Hero = () => {
       <div className="bio">
         <div className="bio-title">
           <Title>
-            {" "}
             Howdy! 🤙 It's <Highlight>Benjamin</Highlight> here. Welcome to my
             internet island 🌴!
           </Title>
