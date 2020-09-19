@@ -12,6 +12,8 @@ app.get("/tweets", async (req, res) => {
   const params = {
     screen_name: "ballanrahill",
     count: 3,
+    trim_user: "false",
+    exclude_replies: "true",
   };
 
   const twitterRes = await needle("get", endpointUrl, params, {
@@ -28,6 +30,4 @@ app.get("/tweets", async (req, res) => {
   res.send("Hello world");
 });
 
-app.listen(3000, () =>
-  console.log(`Express listening on port 3000 and the token is ${token}`)
-);
+app.listen(3000, () => console.log(`Express listening on port 3000`));
