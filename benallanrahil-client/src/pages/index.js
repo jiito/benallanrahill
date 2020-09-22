@@ -5,16 +5,15 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
-import Hero from "../components/landing_page/hero"
+import Hero from "../components/landing_page/Hero"
+import LogoPortfolio from "../components/landing_page/LogoPortfolio"
 
 const Portfolio = styled.div`
+  display: flex;
   font-family: sans-serif;
   font-weight: lighter;
-  color: black;
-  display: flex;
   padding: 2em;
   background-color: aliceblue;
-  height: 1000px;
 `
 
 const IndexPage = () => (
@@ -22,7 +21,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <Hero />
     <Portfolio>
-      <h1>Here is where I will put my portfolio</h1>
+      <LogoPortfolio />
     </Portfolio>
   </Layout>
 )
