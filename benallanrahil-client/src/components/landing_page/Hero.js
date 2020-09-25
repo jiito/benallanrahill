@@ -3,24 +3,24 @@ import styled from "styled-components"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-const Title = styled.h1`
-  font-family: sans-serif;
-  font-weight: lighter;
-  color: black;
-`
-const HeroImageDiv = styled.div`
-  background: black;
-  overflow: hidden;
+import OldPopup from "../OldPopup"
+
+const HeroDivWrapper = styled.div`
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  width: 100vw;
+
 `
 
 const Highlight = styled.span`
-  color: #00adb5;
+  color: #3f8994;
 `
 const HeroImage = () => (
   <StaticQuery
     query={graphql`
       query {
-        heroImage: file(relativePath: { eq: "dario-bronnimann-unsplash.jpg" }) {
+        heroImage: file(relativePath: { eq: "lowPolyFace.png" }) {
           childImageSharp {
             fluid(maxWidth: 2000) {
               ...GatsbyImageSharpFluid
@@ -30,28 +30,25 @@ const HeroImage = () => (
       }
     `}
     render={data => (
-      <HeroImageDiv>
+      // <HeroImageDiv>
         <Img
-          fluid={data.heroImage.childImageSharp.fluid}
-          alt="This is a picture of my face."
-          imgStyle={{ objectFit: "cover", opacity: 0.4 }}
+        fluid={data.heroImage.childImageSharp.fluid}
+        alt="This is a picture of my face."
+        style={{width: "500px"}}
         />
-      </HeroImageDiv>
+      // </HeroImageDiv>
     )}
   />
 )
 
-const Hero = ({ data }) => {
+const Hero = ({ className, data }) => {
   return (
     <div className="Hero">
       <div className="bio">
-        <div className="bio-title">
-          <Title>
-            Howdy! 🤙 It's <Highlight>Benjamin</Highlight> here. Welcome to my
-            internet island 🌴!
-          </Title>
+        <HeroDivWrapper>
+          <OldPopup className={className} message= {"Howdy! 🤙 It's Benjamin here. Welcome to my internet island!"} />
           <HeroImage />
-        </div>
+        </HeroDivWrapper>
       </div>
     </div>
   )

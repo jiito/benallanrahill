@@ -54,3 +54,23 @@ nav {
     }
   }
 }
+
+.gradient-bar {
+  display: flex;
+  background-image: linear-gradient(to right, #0138ae, #238fda);
+  height: 30px;
+  align-items: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Chathura:wght@300&display=swap');
+.old-button {
+  font-family: 'Chathura', sans-serif;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  background-color: #c5c5c5;
+  box-shadow: 1px 1px 1px #000000, 1px 1px 1px #ffffff inset;
+  margin: 2px;
+  left: 95%;
+
+}
