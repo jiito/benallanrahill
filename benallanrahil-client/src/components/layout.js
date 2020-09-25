@@ -25,23 +25,9 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <NavBar />
-      <div
-        style={{
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+      <div>
         <main>{children}</main>
-        {/* <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <p>
-            This site is in development. Go to:
-            <a href="benallanrahill.com"> benallanrahill.com</a>
-          </p>
-        </footer> */}
       </div>
     </>
   )
