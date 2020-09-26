@@ -60,17 +60,45 @@ nav {
   background-image: linear-gradient(to right, #0138ae, #238fda);
   height: 30px;
   align-items: center;
+  justify-content: flex-end;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Chathura:wght@300&display=swap');
-.old-button {
-  font-family: 'Chathura', sans-serif;
-  box-sizing: border-box;
-  position: relative;
-  display: block;
-  background-color: #c5c5c5;
-  box-shadow: 1px 1px 1px #000000, 1px 1px 1px #ffffff inset;
-  margin: 2px;
-  left: 95%;
+@import url("https://fonts.googleapis.com/css2?family=Chathura:wght@300&display=swap");
+.old-popup {
+  box-shadow: 1px 1px 0.5px 0.5px #ffffff inset,
+    -1px -1px 0.5px 0.5px #5a5a5a inset;
+  font-family: "Chathura", sans-serif;
+  font-weight: 400;
+  .popup-content {
+    display: flex;
+    align-items: center;
 
+    span {
+      margin: 1em;
+    }
+    p {
+      color: transparent;
+      text-shadow: 0 0 0.3px #000;
+    }
+  }
+  .old-button {
+    justify-self: flex-end;
+    align-items: center;
+    p {
+      all: none;
+      line-height: 0.55em;
+      font-size: 2em;
+      color: transparent;
+      text-shadow: 0 0 0.3px #000;
+      font-weight: bolder;
+      margin-inline: 0.1em;
+    }
+    box-sizing: border-box;
+    // position: relative;
+    background-color: #c5c5c5;
+    box-shadow: 1.5px 1.5px 1px 1px #000000, 1px 1px 0.5px 0.5px #ffffff inset,
+      -1px -1px 0.5px 0.5px #5a5a5a inset;
+    margin: 5px;
+    // left: 95%;
+  }
 }

@@ -7,10 +7,9 @@ import OldPopup from "../OldPopup"
 
 const HeroDivWrapper = styled.div`
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   width: 100vw;
-
 `
 
 const Highlight = styled.span`
@@ -31,11 +30,11 @@ const HeroImage = () => (
     `}
     render={data => (
       // <HeroImageDiv>
-        <Img
+      <Img
         fluid={data.heroImage.childImageSharp.fluid}
         alt="This is a picture of my face."
-        style={{width: "500px"}}
-        />
+        style={{ width: "500px" }}
+      />
       // </HeroImageDiv>
     )}
   />
@@ -46,7 +45,13 @@ const Hero = ({ className, data }) => {
     <div className="Hero">
       <div className="bio">
         <HeroDivWrapper>
-          <OldPopup className={className} message= {"Howdy! 🤙 It's Benjamin here. Welcome to my internet island!"} />
+          <OldPopup
+            className={className}
+            message={
+              "Howdy! It's Benjamin here. Welcome to my internet island!"
+            }
+            emoji={"🤙 "}
+          />
           <HeroImage />
         </HeroDivWrapper>
       </div>

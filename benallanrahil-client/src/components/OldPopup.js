@@ -9,7 +9,6 @@ const gradientBar = styled.div`
   justify-content: right;
 `
 const Title = styled.h1`
-  font-family: monospace;
   font-weight: lighter;
   color: black;
   margin-inline: 18px;
@@ -21,13 +20,20 @@ const Styles = {
   maxWidth: "500px",
 }
 
-const OldPopup = ({ className, message }) => {
+const OldPopup = ({ className, message, emoji }) => {
   return (
-    <div className={className} style={{ ...Styles }}>
+    <div className="old-popup" style={{ ...Styles }}>
       <div className="gradient-bar">
-        <OldButton link="/">X</OldButton>
+        <OldButton link="/">
+          <p>X</p>
+        </OldButton>
       </div>
-      <Title className={className}>{message}</Title>
+      <div className="popup-content">
+        <span className="emoji">{emoji}</span>
+        <Title className={className}>
+          <p>{message}</p>
+        </Title>
+      </div>
     </div>
   )
 }
