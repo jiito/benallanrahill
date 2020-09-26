@@ -5,7 +5,7 @@ const Grid = styled.div`
     display: flex;
     flex-direction: col
     align-items: center;
-    background-color: orange;
+    background-color: #3f8994;
 `
 
 const Logo = styled.img`
