@@ -1,10 +1,16 @@
 import React from "react"
 import styled from "styled-components"
+import OldPopup from "../OldPopup"
 
 const Portfolio = () => {
   return (
     <PortfolioDiv>
       <h1>What I am working on</h1>
+      <div className="current-projects">
+        <OldPopup message="sweeep.me" emoji="🧹" />
+        <OldPopup message="c o s m o s" emoji="🌌" />
+        <OldPopup message="Product Buds" emoji="🍃" />
+      </div>
     </PortfolioDiv>
   )
 }
